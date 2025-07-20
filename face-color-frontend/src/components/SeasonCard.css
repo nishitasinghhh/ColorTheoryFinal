@@ -1,0 +1,107 @@
+.season-cards-row {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin: 48px 0 0 0;
+  flex-wrap: wrap;
+}
+
+.season-card {
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(99,102,241,0.10);
+  padding: 32px 24px 28px 24px;
+  min-width: 240px;
+  max-width: 270px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  animation: seasonCardFadeIn 0.7s cubic-bezier(.4,2,.6,1) both;
+  cursor: pointer;
+}
+.season-card:hover {
+  box-shadow: 0 12px 48px rgba(99,102,241,0.18);
+  transform: translateY(-6px) scale(1.04);
+}
+
+@keyframes seasonCardFadeIn {
+  from { opacity: 0; transform: translateY(40px) scale(0.98);}
+  to { opacity: 1; transform: translateY(0) scale(1);}
+}
+
+.season-emoji {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+.season-name {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #6366f1;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.season-bestfor {
+  font-size: 0.98rem;
+  color: #22223b;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.season-characteristics {
+  font-size: 0.98rem;
+  color: #555;
+  margin-bottom: 12px;
+  font-style: italic;
+  text-align: center;
+}
+.season-swatches {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  margin-top: 4px;
+}
+.season-swatch {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.10);
+  transition: transform 0.2s;
+}
+.season-card:hover .season-swatch {
+  transform: scale(1.12);
+}
+.season-avoid {
+  font-size: 0.95rem;
+  color: #b91c1c;
+  margin-top: 8px;
+  text-align: center;
+}
+.season-avoid-label {
+  font-weight: 600;
+  color: #b91c1c;
+}
+@media (max-width: 1100px) {
+  .season-cards-row {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .season-card {
+    min-width: 220px;
+    max-width: 100%;
+    padding: 24px 10px 20px 10px;
+  }
+}
+@media (max-width: 700px) {
+  .season-cards-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .season-card {
+    width: 90vw;
+    min-width: unset;
+    max-width: 98vw;
+  }
+}

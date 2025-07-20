@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+requests
+Pillow
+openai
+python-dotenv
+serpapi
+opencv-python
+mediapipe
+scikit-learn
+numpy 

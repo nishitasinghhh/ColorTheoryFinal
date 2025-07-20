@@ -1,0 +1,21 @@
+{
+  "undertone": "Warm",
+  "lip_rgb": [
+    101,
+    110,
+    165
+  ],
+  "hair_rgb": [
+    29,
+    31,
+    37
+  ],
+  "skin_rgb": [
+    73,
+    91,
+    132
+  ],
+  "left_eye_color": "Black",
+  "right_eye_color": "Black",
+  "dominant_eye_color": "Black"
+}

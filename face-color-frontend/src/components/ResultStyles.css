@@ -1,0 +1,34 @@
+.result-section {
+  margin-top: 32px;
+  padding: 20px;
+  background: #fffdf6;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.swatch-grid, .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.swatch-card, .product-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.swatch-image, .product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.outfit-style {
+  margin-top: 16px;
+}
