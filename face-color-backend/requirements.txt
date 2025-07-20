@@ -8,7 +8,7 @@ openai
 python-dotenv
 serpapi
 opencv-python
-mediapipe=0.10.14
+mediapipe==0.10.14
 scikit-learn
 numpy 
 
